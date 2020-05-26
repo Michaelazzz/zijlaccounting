@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+/* Font */
+@font-face {
+	font-family: "MADE Canvas Regular";
+	src: url("fonts/MADE Canvas Regular PERSONAL USE.otf");
+}
+
+@font-face {
+	font-family: "MADE Canvas Black";
+	src: url("fonts/MADE Canvas Black PERSONAL USE.otf");
+}
+
+@font-face {
+	font-family: "MADE Canvas Light";
+	src: url("fonts/MADE Canvas Light PERSONAL USE.otf");
+}
+
+@font-face {
+	font-family: "Open Sans Regular";
+	src: url("fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Open Sans Semi-bold";
+	src: url("fonts/OpenSans-SemiBold.ttf");
+}
+
+/* Font */
+
+html, body {
+	font-family: "MADE Canvas Regular", serif;
+	overflow-x: hidden;
+}
+
+p, dd {
+	font-family: "Open Sans Regular", serif;
+}
+
+/* Navigation */
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	
+	position: fixed;
+	overflow: auto;
+
+	min-width: 320px;
+
+	background-color: white;
+}
+
+/* Navigation Logo */
+nav #logo {
+	height: 5em;
+}
+
+/* Navigation Links */
+
+nav li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	padding: 2em;
+}
+
+nav li a {
+	display: block;
+	width: 70px;
+	margin-top: 1em;
+
+	color: #333;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: #66C7F4;
+}
+
+/* Fixed Navigation Bar */
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+main {
+	width: 100%;
+	margin-top: 8em;
+	position: absolute;
+	z-index: 0;
+}
+
+/* Banner */
+#banner {
+	text-align: center;
+	min-height: 75vh;
+	text-align: center;
+	padding-top: 15vh;
+}
+
+#banner h1 {
+	font-family: "MADE Canvas Light", serif;
+	font-size: 10em;
+}
+
+/* Headings */
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+/* Paragraphs */
+
+#services-paragraph {
+	padding-right: 20em;
+}
+
+.indent {
+	display: block;
+	padding-left: 2em;
+	padding-right: 20em;
+}
+
+#about, #services, #contact, #footer {
+	margin-left: 20em;
+}
+
+/* Footer */
+
+#footer img {
+	width: 5em;
+}
+
+#footer {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#footer p {
+	float: right; 
+	padding-top: 0.6em;
+	text-align: right;
+	padding-right: 20em;
+}
+
+/*.footer * {
+	float: left;
+}*/
+
+/* Tablet Media Queries */
+@media only screen and (max-width: 1024px) {
+	/* Paragraph Media Queries */
+
+	.indent {
+		display: block;
+		padding-left: 2em;
+		padding-right: 5em;
+	}
+
+	/* Footer Media Queries */
+	#about, #services, #contact, #footer {
+		margin-left: 5em;
+	}
+
+	#footer p {
+		padding-right: 5em;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	#services-paragraph {
+		padding-right: 20em;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	#banner h1 {
+		font-family: "MADE Canvas Light", serif;
+		font-size: 7em;
+	}
+
+	#services-paragraph {
+		padding-right: 5em;
+	}
+}
+
+/* Phone Media Queries */
+@media only screen and (max-width: 570px) {
+	/* 
+		Navigation Bar Media Queries 
+	*/
+
+	/*make list items smaller*/
+	nav li a {
+		width: 10px;
+		font-size: 0.5em;
+	}
+
+	/*make nav picture smaller*/
+	nav #logo {
+	height: 2em;
+	}
+
+	/* 
+		Heading Media Queries
+	*/
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	/* 
+		Banner Media Queries
+	*/
+	#banner h1 {
+		font-size: 4em;
+	}
+
+	/*
+		Paragraph Media Queries 
+	*/
+
+	.indent {
+		display: block;
+		padding-left: 2em;
+		padding-right: 5em;
+	}
+
+	/*
+		Footer Media Queries
+	*/
+
+	#about, #services, #contact, #footer {
+		margin-left: 5em;
+	}
+
+	#footer p {
+		margin-right: 5em;
+	}
+}
+
